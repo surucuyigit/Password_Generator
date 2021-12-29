@@ -3,18 +3,7 @@ import string
 from tkinter import *
 from tkinter import messagebox
 import pyperclip
-#-------------------------------------#
-# Used this block of code for pyinstaller
-def resource_path(relative_path):
-    """ Get absolute path to resource, works for dev and for PyInstaller """
-    try:
-        # PyInstaller creates a temp folder and stores path in _MEIPASS
-        base_path = sys._MEIPASS
-    except Exception:
-        base_path = os.path.abspath(".")
 
-    return os.path.join(base_path, relative_path)
-#---------------------------------------#
 # Generator #
 def generate_password():
   letters = string.ascii_letters
@@ -60,7 +49,6 @@ def get_texts():
             website_entry.delete(0, END)
             password_entry.delete(0, END)
     
-    
 #* UI
 
 window = Tk()
@@ -69,7 +57,7 @@ window.title('Password Manager by YS')
 window.config(padx= 50, pady=50)
 
 canvas = Canvas(width=256, height=256)
-lock_photo = PhotoImage(file=resource_path('logo.png'))
+lock_photo = PhotoImage(file='logo.png')
 canvas.create_image(130, 128, image=lock_photo)
 canvas.grid(column=1, row=0)
 
