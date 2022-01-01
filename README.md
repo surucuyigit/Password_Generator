@@ -7,5 +7,5 @@ Just click the search button to access the information of the website you wrote.
 
 You can download and use .exe file if you want to. Otherwise you need to download the logo.png and main.py, and make an .exe file
 
-![add file](https://github.com/surucuyigit/Password_Manager/blob/main/password_manager.png) 
 
+![add file](https://github.com/surucuyigit/Password_Manager/blob/main/password_manager.png)
